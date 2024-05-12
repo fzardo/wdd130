@@ -53,3 +53,7 @@ footer a {
     float : right;
     width : 200px;
 }
+
+h1, h2 {
+    color: var(--primary-color);
+}
