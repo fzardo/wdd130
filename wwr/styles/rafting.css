@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap");
+
+:root {
+    --primary-color: #2E6D8D;
+    --secondary-color: #484747;
+    --accent1-color: #F1CF82;
+    --accent2-color: #F1CF82;
+
+    --heading-font: "Spline Sans", sans-serif;
+    --paragraph-font: "Spline Sans", sans-serif;
+
+    --nav-background-color:var(--accent1-color);
+    --nav-link-color:var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+    --nav-hover-link-color:var(--accent2-color);
+}
+
+body {
+    max-width : 1280px;
+    padding : 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position : absolute;
+    top : 0px;
+    left : 25px;
+    color: var(--accent1-color);
+}
+
+.hero article {
+    position: absolute;
+    background : var(--accent1-color);
+    bottom : 10px;
+    opacity : 0.90;
+    padding : 0.80rem;
+}
+
+.hero article img {
+    float : right;
+    width : 200px;
+}
