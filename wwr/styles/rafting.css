@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #2E6D8D;
     --secondary-color: #484747;
@@ -16,12 +22,43 @@
 }
 
 body {
+    margin: auto auto;
     max-width : 1280px;
     padding : 20px;
+    text-align: center;
 }
 
-footer a {
+header, main, footer {
+    margin-top: 15px;
+}
+
+header {
+    display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+    border: 1px solid steelblue;
+}
+
+header img {
+    margin: 0 auto 0 auto;
+    width: 100;
+    height: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+
+	flex: 1 1 100%;
     text-decoration: none;
+    align-content: center;
+}
+
+.navigation {
+    border: 1px solid steelblue;
+    min-height: 30px;
 }
 
 .hero {
@@ -36,24 +73,66 @@ footer a {
 
 .hero h1 {
     position : absolute;
-    top : 0px;
-    left : 25px;
+    top: 10%;
+    padding-left: 35%;
+    padding-right: 35%;
+    text-align: center;
     color: var(--accent1-color);
 }
 
 .hero article {
     position: absolute;
     background : var(--accent1-color);
-    bottom : 10px;
+    bottom : 40%;
+    margin-left: 10%;
+    margin-right: 10%;
     opacity : 0.90;
     padding : 0.80rem;
+    text-align: left;
 }
 
 .hero article img {
-    float : right;
-    width : 200px;
+    float: right;
+    width: 200px;
 }
 
-h1, h2 {
+section {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 3fr;
+    border: 1px solid steelblue;
+    margin-top: 15px;
+    padding : 0.80rem;
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0 auto;
+}
+
+section img {
+    max-width: 200px;
+    max-height: auto;
+    margin: 0.5rem;
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+footer {
+    display: grid;
+	grid-template-columns: 3fr 1fr;
+    border: 1px solid steelblue;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
     color: var(--primary-color);
 }
