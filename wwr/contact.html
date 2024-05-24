@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Site Plan | Contact Us | Felipe Zardo Cabral</title>
+    <meta name="description" content="The Contact Us page includes all the relevant information about how to contact the rafting company's staff.">
+    <meta name="author" content="Felipe Zardo Cabral">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/rafting-momentum.png" alt="Rafting Site Logo">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="division">
+            <h1>Company Information</h1>
+            <p>Address: 123 Rafting Lane, River City, RC 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@raftingmomentum.com</p>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450919!2d144.95373531532046!3d-37.81627977975178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57700c77e4553c7!2sRafting+Lane%2C+River+City%2C+RC+12345!5e0!3m2!1sen!2sus!4v1614205252055!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="division">
+            <h2>Meet Our Team</h2>
+            <div class="employee-profiles">
+                <figure class="employee">
+                    <img src="images/staffjhon.jpg" alt="John Doe">
+                    <figcaption>John Doe, Rafting Guide</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/staffjake.jpg" alt="Jake Smith">
+                    <figcaption>Jake Smith, Trip Coordinator</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/stafflise.jpg" alt="Lise Johnson">
+                    <figcaption>Lise Johnson, Safety Officer</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="division">
+            <h2>Contact Us</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation" required>
+                    <label for="suggestion">Website Suggestion</label>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion" required>
+                </fieldset>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2024 | Rafting Momentum | Felipe Zardo Cabral</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="X (Twitter)">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
