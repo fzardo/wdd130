@@ -144,6 +144,7 @@ footer p {
 h1 {
     color: var(--primary-color);
     border-bottom: var(--primary-color);
+    margin-bottom: 5px;
 }
 
 /* Company Information Section */
