@@ -209,7 +209,7 @@ form textarea {
 
 form fieldset {
     display: flex;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border: none;
     padding: 0;
     margin: auto;
