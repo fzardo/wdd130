@@ -24,7 +24,7 @@ body {
 
 header, main, footer, section {
     margin-top: 15px;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 0.8rem;
 }
 
@@ -122,6 +122,10 @@ section div {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.contactdivision form button {
+    background-color: var(--primary-color);
+}
+
 section img {
     width: 200px;
     height: auto;
@@ -164,7 +168,7 @@ section.newsletter button {
 }
 
 section.newsletter button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-color);
 }
 
 footer {
@@ -236,7 +240,7 @@ form input[type="email"],
 form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--accent1-color);
     border-radius: 5px;
 }
 
@@ -254,7 +258,7 @@ form input[type="checkbox"] {
 }
 
 form button {
-    background-color: #007BFF;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -264,7 +268,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-color);
 }
 
 iframe {
@@ -350,7 +354,7 @@ iframe {
 
 .trip-table th, .trip-table td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--accent1-color);
     text-align: left;
 }
 
@@ -387,7 +391,7 @@ section.newsletter label {
 
 section.newsletter input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--accent1-color);
     border-radius: 5px;
 }
 
@@ -401,5 +405,5 @@ section.newsletter button {
 }
 
 section.newsletter button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-color);
 }
