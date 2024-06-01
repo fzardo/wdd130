@@ -11,54 +11,49 @@
     --secondary-color: #484747;
     --accent1-color: #F1CF82;
     --accent2-color: #F1CF82;
-
-    --heading-font: "Spline Sans", sans-serif;
-    --paragraph-font: "Spline Sans", sans-serif;
-
-    --nav-background-color:var(--accent1-color);
-    --nav-link-color:var(--secondary-color);
-    --nav-hover-background-color: var(--accent1-color);
-    --nav-hover-link-color:var(--accent2-color);
+    --font-family: "Spline Sans", sans-serif;
 }
 
 body {
-    margin: auto auto;
-    max-width : 1280px;
-    padding : 20px;
+    margin: auto;
+    max-width: 1280px;
+    padding: 20px;
     text-align: center;
+    font-family: var(--font-family);
 }
 
-header, main, footer {
+header, main, footer, section {
     margin-top: 15px;
+    border: 1px solid steelblue;
+    padding: 0.8rem;
 }
 
 header {
     display: grid;
-	grid-template-columns: 1fr 2fr;
-	align-items: center;
-    border: 1px solid steelblue;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
 
 header img {
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     width: 150px;
     height: auto;
 }
 
 nav {
     display: flex;
+    background-color: var(--accent1-color);
 }
 
 nav a {
-
-	flex: 1 1 100%;
+    flex: 1;
     text-decoration: none;
+    color: var(--primary-color);
     align-content: center;
 }
 
-.navigation {
-    border: 1px solid steelblue;
-    min-height: 30px;
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 .hero {
@@ -66,28 +61,30 @@ nav a {
 }
 
 .hero img {
-    display: block;
+    display: grid;
     width: 100%;
     height: auto;
 }
 
 .hero h1 {
-    position : absolute;
+    position: absolute;
     top: 10%;
-    padding-left: 35%;
-    padding-right: 35%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-align: center;
     color: var(--accent1-color);
+    padding: 0 35%;
 }
 
 .hero article {
     position: absolute;
-    background : var(--accent1-color);
-    bottom : 40%;
-    margin-left: 10%;
-    margin-right: 10%;
-    opacity : 0.90;
-    padding : 0.80rem;
+    bottom: 40%;
+    left: 10%;
+    right: 10%;
+    background: var(--accent1-color);
+    opacity: 0.9;
+    padding: 0.8rem;
     text-align: left;
 }
 
@@ -98,17 +95,15 @@ nav a {
 
 section {
     display: grid;
-    align-items: center;
     grid-template-rows: 1fr 3fr;
-    border: 1px solid steelblue;
+    align-items: center;
     margin-top: 15px;
-    padding : 0.80rem;
 }
 
 section div {
     display: flex;
     align-items: center;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .division {
@@ -116,7 +111,7 @@ section div {
     padding: 20px;
     margin-bottom: 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section img {
@@ -129,10 +124,44 @@ section h2 {
     color: var(--primary-color);
 }
 
+section.newsletter {
+    margin: 20px 0;
+}
+
+section.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section.newsletter label {
+    font-weight: bold;
+}
+
+section.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.newsletter button:hover {
+    background-color: #0056b3;
+}
+
 footer {
     display: grid;
-	grid-template-columns: 3fr 1fr;
-    border: 1px solid steelblue;
+    grid-template-columns: 3fr 1fr;
 }
 
 footer p {
@@ -141,12 +170,10 @@ footer p {
     justify-content: center;
 }
 
-h1 {
+h1, h2 {
     color: var(--primary-color);
-    margin-bottom: 5px;
 }
 
-/* Company Information Section */
 .company-info {
     display: flex;
     flex-direction: column;
@@ -160,7 +187,6 @@ h1 {
     margin-top: 20px;
 }
 
-/* Employee Profiles Section */
 .employee-profiles {
     display: flex;
     justify-content: space-around;
@@ -185,7 +211,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Contact Form Section */
 form {
     display: flex;
     flex-direction: column;
@@ -194,7 +219,7 @@ form {
     margin: 0 auto;
 }
 
-form label {
+form label, form legend {
     font-weight: bold;
 }
 
@@ -209,23 +234,15 @@ form textarea {
 
 form fieldset {
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     border: none;
     padding: 0;
     margin: auto;
 }
 
-form legend {
-    font-weight: bold;
-}
-
-form input[type="radio"] {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
+form input[type="radio"],
 form input[type="checkbox"] {
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 form button {
@@ -244,4 +261,137 @@ form button:hover {
 
 iframe {
     border: 0;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.call-to-action button:hover {
+    background-color: #0056b3;
+}
+
+.offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.offering {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offering img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.trip-descriptions {
+    display: grid;
+    gap: 20px;
+    padding: 100px;
+}
+
+.trip {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trip img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.trip div {
+    text-align: left;
+}
+
+.trip-table {
+    margin-top: 20px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table td a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+.trip h3 {
+    padding-right: 3px;
+}
+
+section.newsletter {
+    margin: 20px 0;
+}
+
+section.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section.newsletter label {
+    font-weight: bold;
+}
+
+section.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.newsletter button:hover {
+    background-color: #0056b3;
 }

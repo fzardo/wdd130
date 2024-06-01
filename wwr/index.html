@@ -6,54 +6,70 @@
         <title>Rafting Site Plan | Felipe Zardo Cabral</title>
         <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project.">
         <meta name="author" content="Felipe Zardo Cabral">
-        <link rel="stylesheet" href="styles/site-plan-rafting.css">
+        <link rel="stylesheet" href="styles/rafting.css">
     </head>
     <body>
         <header>
-            <h1>Rafting Momentum</h1>
-            <div>Felipe Zardo Cabral</div>
-        </header>
-        <main>
-            <h2>Overview</h2>
-
-            <h3>Purpose</h3>
-            <p>At Rafting Momentum, our mission is to provide exhilarating and safe outdoor experiences that connect people with nature while fostering a sense of adventure and camaraderie. Rooted in our core values of safety, environmental stewardship, and exceptional customer service, we aim to be the premier destination for rafting enthusiasts of all levels.</p>
-
-            <h3>Audience</h3>
-            <p>Our target audience comprises adventure seekers, outdoor enthusiasts, and families seeking thrilling experiences in the great outdoors. Whether individuals are seasoned rafters looking for challenging rapids or first-timers seeking a memorable excursion, we cater to a diverse range of participants. Our offerings are designed to appeal to individuals of all ages and backgrounds who crave excitement, exploration, and connection with nature. We welcome both local residents seeking weekend adventures and tourists seeking unique experiences while visiting our region. Additionally, we provide specialized programs for corporate groups, school outings, and special events, catering to organizations looking to foster team bonding and create unforgettable memories in a natural setting.</p>
-
-            <h2>Branding</h2>
-
-            <h3>Website Logo</h3>
             <img src="images/rafting-momentum.png" alt="Rafting Site Logo">
-
-            <h2>Style Guide</h2>
-
-            <h3>Color Palette</h3>
-            <p>Primary-color #2E6D8D | Seconary-color #484747 | Accent1-color #F1CF82 | Accent2-color #F1CF82 | Palette URL: <a href="https://coolors.co/fdfcfb-2e6d8d-f1cf82-f3f2eb-484747" target="_blank">https://coolors.co/fdfcfb-2e6d8d-f1cf82-f3f2eb-484747</a></p>
-            <h3>Typography</h3>
-            <h4>Headings Example Font</h4>
-            <h4>Normal Text/Paragraph Example Font</h4>
-            <p>Example text - Spline Sans</p>
-            <h4>Colored Callout Example Font</h4>
-            <p>Example text - Spline Sans</p>
-
-            <h3>Navigation</h3>
-            <nav>
+            <nav class="navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="trips.html">Trips</a>
                 <a href="contact.html">Contact</a>
             </nav>
-
-            <h2>Wireframes</h2>
-            <h3>Hope Page Wireframe</h3>
-            <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">
-            <h3>About Us Page Wireframe</h3>
-            <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Page Wireframe Design" width="700">
+        </header>
+        <main>
+            <div class="hero">
+                <img src="images/hero.jpg" alt="Rafting Momentum">
+                <h1>Experience the Thrill of White Water Rafting!</h1>
+            </div>
+    
+            <section class="newsletter">
+                <h2>Sign Up for Our Newsletter</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+    
+            <section class="call-to-action">
+                <h2>Join Us on an Unforgettable Momentum</h2>
+                <a href="trips.html"><button>View Our Trips</button></a>
+            </section>
+    
+            <div class="offerings">
+                <div class="offering">
+                    <img src="images/offering1.jpg" alt="Offering 1">
+                    <div>
+                        <h2>Why Choose Us?</h2>
+                        <p>We offer the best white water rafting experience with professional guides and top-notch equipment.</p>
+                    </div>
+                </div>
+                <div class="offering">
+                    <img src="images/offering2.jpg" alt="Offering 2">
+                    <div>
+                        <h2>Our Services</h2>
+                        <p>We provide a variety of rafting trips suitable for all levels of experience, from beginners to advanced rafters.</p>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
-            <p>&copy;2024 | Rafting Momentum | Felipe Zardo Cabral | Brasil | WWD 130</p>
+            <p>&copy;2024 | Rafting Momentum | Felipe Zardo Cabral</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="X (Twitter)">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
         </footer>
     </body>
 </html>
