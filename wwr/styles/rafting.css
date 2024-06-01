@@ -56,76 +56,6 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: grid;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 10%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-    color: var(--accent1-color);
-    padding: 0 35%;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 40%;
-    left: 10%;
-    right: 10%;
-    background: var(--accent1-color);
-    opacity: 0.9;
-    padding: 0.8rem;
-    text-align: left;
-}
-
-.hero article img {
-    float: right;
-    width: 200px;
-}
-
-section {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    align-items: center;
-    margin-top: 15px;
-}
-
-section div {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.division {
-    background: white;
-    padding: 20px;
-    margin-bottom: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contactdivision {
-    background: var(--accent1-color);
-    padding: 20px;
-    margin-bottom: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contactdivision form button {
-    background-color: var(--primary-color);
-}
-
 section img {
     width: 200px;
     height: auto;
@@ -186,41 +116,17 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-.company-info {
+section {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    margin-top: 15px;
+}
+
+section div {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.company-info iframe {
-    border: none;
-    width: 100%;
-    height: 450px;
-    margin-top: 20px;
-}
-
-.employee-profiles {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.employee {
-    text-align: center;
-    max-width: 200px;
-}
-
-.employee img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.employee p {
-    font-weight: bold;
+    align-items: center;
+    margin: 0 auto;
 }
 
 form {
@@ -273,6 +179,137 @@ form button:hover {
 
 iframe {
     border: 0;
+}
+
+section.newsletter {
+    margin: 20px 0;
+}
+
+section.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section.newsletter label {
+    font-weight: bold;
+}
+
+section.newsletter input {
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 5px;
+}
+
+section.newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.newsletter button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Classes */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--accent1-color);
+    padding: 0 35%;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    right: 10%;
+    background: var(--accent1-color);
+    opacity: 0.9;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+}
+
+.division {
+    background: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contactdivision {
+    background: var(--accent1-color);
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contactdivision form button {
+    background-color: var(--primary-color);
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company-info iframe {
+    border: none;
+    width: 100%;
+    height: 450px;
+    margin-top: 20px;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.employee {
+    text-align: center;
+    max-width: 200px;
+}
+
+.employee img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee p {
+    font-weight: bold;
 }
 
 .call-to-action {
@@ -371,39 +408,4 @@ iframe {
 
 .trip h3 {
     padding-right: 3px;
-}
-
-section.newsletter {
-    margin: 20px 0;
-}
-
-section.newsletter form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-section.newsletter label {
-    font-weight: bold;
-}
-
-section.newsletter input {
-    padding: 10px;
-    border: 1px solid var(--accent1-color);
-    border-radius: 5px;
-}
-
-section.newsletter button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-section.newsletter button:hover {
-    background-color: var(--primary-color);
 }
